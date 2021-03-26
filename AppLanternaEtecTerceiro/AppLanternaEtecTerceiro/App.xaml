@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanternaEtecTerceiro.App">
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style TargetType="Label" x:Key="fonteCustomizada">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="Exo2-Bold.ttf#Exo2-Bold" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Label" x:Key="titulo" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="70" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="subTitulo" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="30" />
+            </Style>
+
+
+
+            <Style TargetType="Label" x:Key="texto">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="textoCinza" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="#999" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="textoBranco" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+
+
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+    
+</Application>
